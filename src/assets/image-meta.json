@@ -1,0 +1,30 @@
+{
+  "mainBg": {
+    "width": 1920,
+    "height": 1106
+  },
+  "solnechnyhPanelLarge": {
+    "width": 352,
+    "height": 198
+  },
+  "solnechnyhPanelSmall": {
+    "width": 176,
+    "height": 99
+  },
+  "FreeSolar2": {
+    "width": 1600,
+    "height": 1066
+  },
+  "FreeSolar3": {
+    "width": 1600,
+    "height": 900
+  },
+  "FreeSolar4": {
+    "width": 1200,
+    "height": 800
+  },
+  "FreeSolar": {
+    "width": 400,
+    "height": 347
+  }
+}

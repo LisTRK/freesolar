@@ -1,0 +1,12 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  padding: var(--page-pad);
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+  min-height: 0;
+}

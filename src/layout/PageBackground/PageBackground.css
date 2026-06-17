@@ -1,0 +1,60 @@
+/*.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.page-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(186, 230, 253, 0.05),
+    rgba(186, 230, 253, 0.5)
+  );
+}
+
+.page-bg__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+}
+*/
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* 1. ВИПРАВЛЕННЯ: Розтягуємо сам тег picture */
+.page-bg picture {
+  display: block; /* Перетворюємо інлайновий тег на блочний */
+  width: 100%;
+  height: 100%;
+}
+
+/* 2. Твій псевдоелемент для градієнта — працює ідеально */
+.page-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(186, 230, 253, 0.05),
+    rgba(186, 230, 253, 0.5)
+  );
+  z-index: 1; /* Гарантуємо, що оверлей ляже ПОВЕРХ картинки */
+}
+
+/* 3. Твоя картинка */
+.page-bg__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center; /* Чудове рішення для зміщення фону на мобілках! */
+}

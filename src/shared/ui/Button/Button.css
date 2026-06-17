@@ -1,0 +1,63 @@
+.main-btn {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: min(60vw, var(--button-max), max(275px, 100%), 100%);
+  height: clamp(73px, min(115px, max(73px, calc(0.195 * 100vw - 10px))), 115px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+  padding-block: 0;
+  padding-inline: clamp(10px, 2.2vw + 4px, 30px);
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(rgb(46, 208, 135) 0%, rgb(6, 181, 117) 100%);
+  border-radius: 90px;
+  border-bottom: 2px solid rgb(33, 173, 69);
+  transition:
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.main-btn:focus-visible {
+  outline: 3px solid rgba(16, 185, 129, 0.9);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.18);
+}
+
+.main-btn__label {
+  display: inline-block;
+  max-width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: var(--text-ui);
+  text-transform: uppercase;
+  font-family: "Gilroy Bold", "Gilroy", system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  background-image: url("../../../images/right-arrow.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: clamp(13px, 0.85em, 18px);
+  padding-right: clamp(18px, 0.85em + 0.45rem, 24px);
+  position: relative;
+}
+
+/* Variant modifiers */
+.main-btn--primary {
+  /* primary uses base styles */
+}
+
+.main-btn--secondary {
+  background: #ffffff;
+  color: rgb(33, 173, 69);
+  border: 2px solid rgba(33, 173, 69, 0.12);
+}
+
+.main-btn--ghost {
+  background: transparent;
+  color: rgb(6, 181, 117);
+  border: 1px solid rgba(33, 173, 69, 0.12);
+  box-shadow: none;
+}

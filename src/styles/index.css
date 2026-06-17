@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* База rem: плавно між вузьким і широким екраном, межі читабельності */
+  font-size: clamp(15px, 0.3rem + 2.5vw, 17px);
+}
+
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Рівні тексту для сторінки (rem залежать від html) */
+  /* Мінімум: 22px у масштабі rem (22/16); далі плавно до max; 1rem = база з html */
+  --text-hero: clamp(calc(22 / 16 * 1rem), 0.82rem + 2.2vw, 2.375rem);
+  --text-section: clamp(1.25rem, 1.05rem + 1.35vw, 1.75rem);
+  --text-body: clamp(0.9375rem, 0.88rem + 0.45vw, 1.0625rem);
+  --text-ui: clamp(0.9375rem, 0.78rem + 0.95vw, 1.25rem);
+  /* Відступи сторінки та ширина контенту без @media (max збігається з колишніми брейкпоінтами) */
+  --page-pad: clamp(20px, 0.65rem + 2.2vw, 50px);
+  --content-width: min(630px, max(275px, 100%), 100%);
+  --banner-max: 550px;
+  --button-max: 350px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e2e8f0;
+    background-color: #0f172a;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: var(--text-body);
+  padding-bottom: 20px;
+  /*background-color: #f8fafc;*/
+  background-color: rgba(248, 250, 252, 0.3);
+  color: #000;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+section {
+  box-sizing: border-box;
+  width: var(--content-width);
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+h1{
+  font-size: var(--text-hero)*1.5;
+}

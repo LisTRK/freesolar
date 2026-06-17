@@ -1,0 +1,92 @@
+.footer {
+  padding: 30px 16px 16px;
+  background: transparent; /* Чистий прозорий фон, видно body */
+}
+
+.footer__brand {
+  /* повернуто в оригінальний стан */
+}
+
+.footer__logo {
+  display: block;
+  width: clamp(70px, min(32vw, 24vh), 150px);
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+/* НАЛАШТУВАННЯ КОНТАКТІВ: ЗВИЧАЙНИЙ БЛОК, ПРИТИСНУТИЙ ДО ЦЕНТРУ */
+.footer__contacts {
+  
+  display: block; /* Звичайне блочне позиціонування, скролиться зі сторінкою */
+  max-width: 50%; /* Займає ліву половину сайту */
+  margin-left: 0;
+  margin-right: auto; /* Авто-відступ справа притискає блок правим краєм рівно до центру */
+  
+  text-align: right; /* Текст всередині тиснеться до правого краю (до центру екрана) */
+  font-family: system-ui, -apple-system, sans-serif;
+  padding-right: 20px; /* Невеличкий зазор від самої лінії центру */
+  box-sizing: border-box;
+}
+
+.footer__cta-text {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.footer__phone {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.footer__phone:hover {
+  color: #2563eb;
+}
+
+
+
+.footer__brand {
+  position: fixed;
+  inset: auto 0 0 auto;
+  z-index: 20;
+  padding: 12px 16px 16px;
+  pointer-events: none;
+}
+
+.footer__logo {
+  display: block;
+  width: clamp(70px, min(32vw, 24vh), 150px);
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+/* .footer {
+  position: fixed;
+  inset: auto 0 0 auto;
+  z-index: 20;
+  padding: 12px 16px 16px;
+  pointer-events: none;
+}
+
+.footer__brand {
+  pointer-events: auto;
+}
+
+.footer__logo {
+  display: block;
+  width: clamp(70px, min(32vw, 24vh), 150px);
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+} */

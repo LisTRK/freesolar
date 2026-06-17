@@ -1,0 +1,26 @@
+.site-header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: clamp(12px, 2vw, 24px) var(--page-pad) 0;
+  box-sizing: border-box;
+}
+
+.site-header__title {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.75rem, 1.2rem + 3vw, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: 'Gilroy Bold', 'Gilroy', system-ui, sans-serif;
+  font-weight: 700;
+}
+
+.site-header__free {
+  color: #298ff1;
+}
+
+.site-header__solar {
+  color: #facc15;
+}
