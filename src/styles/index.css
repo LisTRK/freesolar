@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #0f172a;
@@ -38,8 +38,7 @@ html {
     background-color: #0f172a;
   }
 }
-
-body {
+s body {
   margin: 0;
   min-height: 100vh;
   font-size: var(--text-body);
@@ -60,6 +59,6 @@ section {
   margin-inline: auto;
 }
 
-h1{
-  font-size: var(--text-hero)*1.5;
+h1 {
+  font-size: var(--text-hero) * 1.5;
 }

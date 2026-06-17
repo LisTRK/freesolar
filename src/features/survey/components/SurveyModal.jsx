@@ -16,7 +16,7 @@ import "./SurveyModal.css";
 
 const THEME_CONFIG = {
   token: {
-    colorPrimary: "#298ff1",
+    colorPrimary: "#0ab877",
     borderRadius: 6,
     controlHeightLG: 48,
     fontFamily: "system-ui, -apple-system, sans-serif",
@@ -24,8 +24,8 @@ const THEME_CONFIG = {
   components: {
     Button: {
       colorPrimaryGradient:
-        "linear-gradient(to bottom, #80caf8 0%, #298ff1 45%, #298ff3 100%)",
-      primaryShadow: "0 4px 14px rgba(41, 143, 241, 0.35)",
+        "linear-gradient(to bottom, #2ed087 0%, #06b575 100%)",
+      primaryShadow: "0 4px 14px rgba(10, 184, 119, 0.35)",
     },
   },
 };

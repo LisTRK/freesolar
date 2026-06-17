@@ -45,10 +45,6 @@
 }
 
 /* Variant modifiers */
-.main-btn--primary {
-  /* primary uses base styles */
-}
-
 .main-btn--secondary {
   background: #ffffff;
   color: rgb(33, 173, 69);
