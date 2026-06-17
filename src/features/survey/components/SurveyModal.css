@@ -204,9 +204,20 @@ textarea:focus-visible {
   color: #0f172a;
 }
 
-.survey-modal__btn--next {
+.survey-modal__btn--antd {
   background: linear-gradient(rgb(46, 208, 135) 0%, rgb(6, 181, 117) 100%);
   color: #fff;
+}
+
+.survey-modal__btn--antd:disabled {
+  background: rgba(15, 23, 42, 0.08);
+  background: linear-gradient(
+    rgba(8, 122, 59, 0.3) 0%,
+    rgba(9, 88, 50, 0.6) 100%
+  ) !important;
+  color: #fff !important;
+  opacity: 1;
+  border: none;
 }
 
 .survey-modal__close {
