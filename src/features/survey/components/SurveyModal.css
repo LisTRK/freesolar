@@ -1,5 +1,5 @@
 button {
-  z-index: 999;
+  z-index: 1;
 }
 
 button:focus-visible,
@@ -205,8 +205,31 @@ textarea:focus-visible {
 }
 
 .survey-modal__btn--antd {
-  background: linear-gradient(rgb(46, 208, 135) 0%, rgb(6, 181, 117) 100%);
-  color: #fff;
+  background: linear-gradient(
+    rgb(46, 208, 135) 0%,
+    rgb(6, 181, 117) 100%
+  ) !important;
+  color: #fff !important;
+  border: none !important;
+  transition: opacity 0.2s ease-in-out !important;
+}
+
+.survey-modal__btn--antd:not(:disabled):hover {
+  background: linear-gradient(
+    rgb(54, 222, 146) 0%,
+    rgb(8, 196, 127) 100%
+  ) !important;
+  opacity: 0.9;
+  color: #fff !important;
+}
+
+.survey-modal__btn--antd:not(:disabled):active {
+  background: linear-gradient(
+    rgb(36, 198, 125) 0%,
+    rgb(4, 161, 107) 100%
+  ) !important;
+  opacity: 1;
+  color: #fff !important;
 }
 
 .survey-modal__btn--antd:disabled {
