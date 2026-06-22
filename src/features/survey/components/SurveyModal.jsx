@@ -253,7 +253,13 @@ function SurveyModal({ open, onClose }) {
 
           {isDone && (
             <footer className="survey-modal__footer">
-              <Button size="large" block type="default" onClick={handleClose}>
+              <Button
+                className="survey-modal__btn--antd"
+                size="large"
+                block
+                type="primary"
+                onClick={handleClose}
+              >
                 Закрити
               </Button>
             </footer>
