@@ -1,6 +1,6 @@
 .site-header {
   position: relative;
-  z-index: 1;
+  z-index: 999;
   width: 100%;
   padding: clamp(12px, 2vw, 24px) var(--page-pad) 0;
   box-sizing: border-box;
@@ -13,7 +13,7 @@
   line-height: 1.1;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  font-family: 'Gilroy Bold', 'Gilroy', system-ui, sans-serif;
+  font-family: "Gilroy Bold", "Gilroy", system-ui, sans-serif;
   font-weight: 700;
 }
 
