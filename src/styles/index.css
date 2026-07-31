@@ -38,7 +38,7 @@ html {
     background-color: #0f172a;
   }
 }
-s body {
+body {
   margin: 0;
   min-height: 100vh;
   font-size: var(--text-body);
@@ -60,5 +60,5 @@ section {
 }
 
 h1 {
-  font-size: var(--text-hero) * 1.5;
+  font-size: calc(var(--text-hero) * 1.5);
 }
